@@ -13,7 +13,7 @@ email_conn = smtplib.SMTP(host,port)
 email_conn.ehlo()
 email_conn.starttls()
 email_conn.login(username,password)
-email_conn.sendmail(mailfrom,username,msg)
+email_conn.sendmail(emailfrom,username,msg)
 email_conn.quit()
 
 
