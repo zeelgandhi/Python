@@ -5,6 +5,6 @@ with open("date.csv", "w+") as csvfile:
     writer.writerow(["Row1", "Some descr."])
     
     
-exit()
+
 
 
