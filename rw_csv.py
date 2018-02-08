@@ -20,6 +20,6 @@ with open("data.csv", "r") as csvfile:
         print(row)
 
 with open("data.csv", "a") as csvfile:
-    filenames = ["id", "title"]
+    fieldnames = ["id", "title"]
     writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
-    writer.writerow([{"id": 123, "title": "new title"}]
+    writer.writerow({"id": 123, "title": "new title"})
