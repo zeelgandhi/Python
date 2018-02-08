@@ -1,7 +1,11 @@
 import csv
 
 def get_length(file_path):
-    return 1
+    with open ("data.csv") as csvfile:
+        reader = csv.reader(csvfile)
+        reader_list = list(reader)
+        #print(reader_list)
+        return len(reader_list)
    
 def append_data(file_path, name, email):
     fieldnames = ['id', 'name', 'email']
